@@ -21,25 +21,15 @@ from utils import extract_link, get_me_button, get_size
 logger = logging.getLogger(__name__)
 
 user_commands = [
-    "mdisk_api",
     "shortener_api",
     "header",
     "footer",
     "username",
     "banner_image",
-    "base_site",
     "me",
 ]
 avl_web = [
-    "droplink.co",
-    "gplinks.in",
-    "tnlink.in",
-    "za.gl",
-    "du-link.in",
-    "viplink.in",
-    "shorturllink.in",
-    "shareus.in",
-    "earnspace.in",
+    "krishnalink.com",
 ]
 
 avl_web1 = "".join(f"- {i}\n" for i in avl_web)
@@ -85,7 +75,7 @@ async def help_command(c, m: Message):
         firstname=temp.FIRST_NAME,
         username=temp.BOT_USERNAME,
         repo=SOURCE_CODE,
-        owner="@ask_admin001",
+        owner="@badal6667rai",
     )
 
     if WELCOME_IMAGE:
@@ -168,7 +158,6 @@ async def stats_handler(c: Client, m: Message):
 **- Total Users:** `{total_users}`
 **- Total Posts Sent:** `{link_stats['posts']}`
 **- Total Links Shortened:** `{link_stats['links']}`
-**- Total Mdisk Links Shortened:** `{link_stats['mdisk_links']}`
 **- Total Shortener Links Shortened:** `{link_stats['shortener_links']}`
 **- Used Storage:** `{size}`
 **- Total Free Storage:** `{free}`
@@ -192,7 +181,7 @@ async def log_file(bot, message):
         await message.reply(str(e))
 
 
-@Client.on_message(filters.command("mdisk_api") & filters.private)
+@Client.on_message(filters.command("n") & filters.private)
 @private_use
 async def mdisk_api_handler(bot, message: Message):
     user_id = message.from_user.id
@@ -206,7 +195,7 @@ async def mdisk_api_handler(bot, message: Message):
         await message.reply(f"Mdisk API updated successfully to {api}")
 
 
-@Client.on_message(filters.command("shortener_api") & filters.private)
+@Client.on_message(filters.command("api") & filters.private)
 @private_use
 async def shortener_api_handler(bot, m: Message):
     user_id = m.from_user.id
@@ -214,13 +203,13 @@ async def shortener_api_handler(bot, m: Message):
     cmd = m.command
     if len(cmd) == 1:
         s = SHORTENER_API_MESSAGE.format(
-            base_site=user["base_site"], shortener_api=user["shortener_api"]
+            base_site=user["base_site"], shortener_api=user["api"]
         )
 
         return await m.reply(s)
     elif len(cmd) == 2:
         api = cmd[1].strip()
-        await update_user_info(user_id, {"shortener_api": api})
+        await update_user_info(user_id, {"api": api})
         await m.reply(f"Shortener API updated successfully to {api}")
 
 
@@ -327,7 +316,7 @@ async def base_site_handler(bot, m: Message):
     user = await get_user(user_id)
     cmd = m.command
     site = user["base_site"]
-    text = f"`/base_site (base_site)`\n\nCurrent base site: {site}\n\n EX: `/base_site shareus.in`\n\nAvailable base sites:\n{avl_web1}\nAnd All alternate sites to droplink.co"
+    text = f"`/base_site (base_site)`\n\nCurrent Supported site is Krishnalink.com\n\n EX: `/base_site krishnalink.com`\n\nAvailable base sites:\n{avl_web1}\nThanks"
     if len(cmd) == 1:
         return await m.reply(text=text, disable_web_page_preview=True)
     elif len(cmd) == 2:
@@ -347,10 +336,7 @@ async def me_handler(bot, m: Message):
     user_id = m.from_user.id
     user = await get_user(user_id)
     res = USER_ABOUT_MESSAGE.format(
-        base_site=user["base_site"],
-        method=user["method"],
         shortener_api=user["shortener_api"],
-        mdisk_api=user["mdisk_api"],
         username=user["username"],
         header_text=user["header_text"].replace(r"\n", "\n")
         if user["header_text"]
