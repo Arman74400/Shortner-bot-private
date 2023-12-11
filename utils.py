@@ -354,12 +354,12 @@ async def user_api_check(user):
             return "\n\nSet your /mdisk_api to continue..."
     elif user_method == "shortener":
         if not user["shortener_api"]:
-            return f"\n\nSet your /shortener_api to continue...\nCurrent Website {user['base_site']}"
+            return f"\n\nSet your Krishna Link /shortener_api to continue...\nCurrent Website {user['base_site']}"
     elif user_method == "mdlink":
         if not user["mdisk_api"]:
             return "\n\nSet your /mdisk_api to continue..."
         if not user["shortener_api"]:
-            return f"\n\nSet your /shortener_api to continue...\nCurrent Website {user['base_site']}"
+            return f"\n\nSet your Krishna Link /shortener_api to continue...\nCurrent Website {user['base_site']}"
     else:
         return "\n\nSet your /method first"
     return True
@@ -380,17 +380,13 @@ async def create_server():
 async def set_commands(app):
     COMMANDS = [
         BotCommand("start", "Used to start the bot."),
-        BotCommand("help", "Displays the help command."),
         BotCommand("about", "Displays information about the bot."),
-        BotCommand("method", "Sets your preferred method."),
         BotCommand("shortener_api", "Sets the shortener API."),
-        BotCommand("mdisk_api", "Sets the mDisk API."),
         BotCommand("header", "Sets the header."),
         BotCommand("footer", "Sets the footer."),
         BotCommand("username", "Sets the username to replace others."),
         BotCommand("banner_image", "Sets the banner image."),
         BotCommand("me", "Displays information about the bot."),
-        BotCommand("base_site", "Changes the base site."),
         BotCommand("include_domain", "Sets the included domain."),
         BotCommand("exclude_domain", "Sets the excluded domain."),
         BotCommand("stats", "Displays statistics of the server and bot."),
