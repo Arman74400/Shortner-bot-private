@@ -25,6 +25,7 @@ user_commands = [
     "header",
     "footer",
     "username",
+    "base_site"
     "banner_image",
     "me",
 ]
