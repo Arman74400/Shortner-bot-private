@@ -209,6 +209,13 @@ async def shortener_api_handler(bot, m: Message):
         return await m.reply(s)
     elif len(cmd) == 2:
         api = cmd[1].strip()
+        await update_user_info(user_id, {"shortener_api": api})
+        await m.reply(f"Shortener API updated successfully to {api}")
+        )
+
+        return await m.reply(s)
+    elif len(cmd) == 2:
+        api = cmd[1].strip()
         await update_user_info(user_id, {"api": api})
         await m.reply(f"Shortener API updated successfully to {api}")
 
