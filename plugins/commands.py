@@ -21,7 +21,7 @@ from utils import extract_link, get_me_button, get_size
 logger = logging.getLogger(__name__)
 
 user_commands = [
-    "shortener_api",
+    "api",
     "header",
     "footer",
     "username",
