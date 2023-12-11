@@ -178,14 +178,12 @@ Get your Mdisk API from @VideoToolMoneyTreebot
 
 Current Mdisk API: `{}`"""
 
-SHORTENER_API_MESSAGE = """To add or update your Shortner Website API, 
+SHORTENER_API_MESSAGE = """To add or update your KrishnaLink.com API, 
 `/shortener_api [api]`
             
 Ex: `/shortener_api 6LZq851sXofffPHugiKQq`
 
-Current Website: {base_site}
-
-To change your Shortener Website: /base_site
+Supported Website: KrishnaLink.com
 
 Current Shortener API: `{shortener_api}`"""
 
