@@ -21,7 +21,7 @@ from utils import extract_link, get_me_button, get_size
 logger = logging.getLogger(__name__)
 
 user_commands = [
-    "api",
+    "shortener_api",
     "header",
     "footer",
     "username",
@@ -181,7 +181,7 @@ async def log_file(bot, message):
         await message.reply(str(e))
 
 
-@Client.on_message(filters.command("n") & filters.private)
+@Client.on_message(filters.command("bsalmaksnjxjsoamqkansksnsowlwnnssbkdos") & filters.private)
 @private_use
 async def mdisk_api_handler(bot, message: Message):
     user_id = message.from_user.id
@@ -195,7 +195,7 @@ async def mdisk_api_handler(bot, message: Message):
         await message.reply(f"Mdisk API updated successfully to {api}")
 
 
-@Client.on_message(filters.command("api") & filters.private)
+@Client.on_message(filters.command("shortener_api") & filters.private)
 @private_use
 async def shortener_api_handler(bot, m: Message):
     user_id = m.from_user.id
@@ -203,7 +203,7 @@ async def shortener_api_handler(bot, m: Message):
     cmd = m.command
     if len(cmd) == 1:
         s = SHORTENER_API_MESSAGE.format(
-            base_site=user["base_site"], shortener_api=user["api"]
+            base_site=user["base_site"], shortener_api=user["shortener_api"]
         )
 
         return await m.reply(s)
