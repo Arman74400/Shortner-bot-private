@@ -152,7 +152,7 @@ BACK_REPLY_MARKUP = InlineKeyboardMarkup(
 USER_ABOUT_MESSAGE = """
 🔧 Here are the current settings for this bot:
 
-- 🌐 Shortener website: KrishnaLink.com
+- 🌐 Shortener website: {base_site}
 
 - 🔌 Your API: {shortener_api}
 
@@ -178,12 +178,14 @@ Get your Mdisk API from @VideoToolMoneyTreebot
 
 Current Mdisk API: `{}`"""
 
-SHORTENER_API_MESSAGE = """To add or update your KrishnaLink.com API, 
+SHORTENER_API_MESSAGE = """To add or update your Shortner Website API, 
 `/shortener_api [api]`
             
 Ex: `/shortener_api 6LZq851sXofffPHugiKQq`
 
-Current Website: KrishnaLink.com
+Current Website: {base_site}
+
+To change your Shortener Website: /base_site
 
 Current Shortener API: `{shortener_api}`"""
 
