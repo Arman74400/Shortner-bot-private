@@ -11,14 +11,24 @@ For example: <code>/batch -100xxx</code>
 I'll handle the rest and get those links shortened or converted in a short time! 💪
 """
 
-START_MESSAGE = """Hi there {} 
+START_MESSAGE = """Hi, {}
 
-Send me a link or post and I'll shorten it for you!
+I Am KrishnaLink.com, Bulk Link Converter. I Can Convert Links Directly From Your KrishnaLink.com Account,
 
-To learn more about what I can do, just type /help.
+1. Go To 👉 https://krishnalink.com/member/tools/api  
+2. Than Copy API Key
+3. Than Type /shortener_api than give a single space and than paste your API Key (see example to understand more...)
 
-Method: {}
-Shortener website: {}
+/shortener_api(space)API Key 
+(See Example.👇)
+Example: /shortener_api de303d5270f481aec928f39883da7b7f9a8812ac 
+
+➕ Hit 👉 /help To Know More Features Of This Bot.
+➕ Hit 👉 /header To Get Help About Adding your Custom Header to bot.
+➕ Hit 👉 /banner To Get Help About Adding your Custom Banner in posts.
+➕ Hit 👉 /footer To Get Help About Adding your Custom Footer to bot.
+
+If You Want Any Other Shortner Link Converter Bot Instead Of krishnalink.com than contact at 👉 @Badal6667Rai (all shortners support available.)
 """
 
 HELP_MESSAGE = """Hey there! My name is {firstname} and I'm a link convertor and shortener bot here to make your work easier and help you earn more 💰.
@@ -48,24 +58,17 @@ ABOUT_TEXT = """
     
 `📝 Language:` [Python 3](https://www.python.org/)
 `🧰 Framework:` [Pyrogram](https://github.com/pyrogram/pyrogram)
-`👨‍💻 Developer:` [Dev](t.me/ask_admin001)
-`📢 Support:` [Talk Bot](https://t.me/ask_admin001)
-`🌐 Source Code:` [GitHub](https://github.com/kevinnadar22/URL-Shortener-V2/)
+`👨‍💻 Developer:` [Dev](t.me/badal6667rai)
+`📢 Support:` [Talk Bot](https://t.me/zxlink07)
 """
 
 
 METHOD_MESSAGE = """
-Current Method: {method}
+Current Method: SHORTENER
     
 Methods Available:
 
-> `mdlink` - Change all the links of the post to your MDisk account first and then short to {shortener} link.
-
-> `shortener` - Short all the links of the post to {shortener} link directly.
-
-> `mdisk` - Save all the links of the post to your Mdisk account.
-    
-To change method, choose it from the following options:
+NO METHODS AVAILABLE CONTACT @BADAL6667RAI
 """
 
 CUSTOM_ALIAS_MESSAGE = """For custom alias, `[link] | [custom_alias]`, Send in this format
@@ -91,16 +94,13 @@ Here is a list of the channels:
 HELP_REPLY_MARKUP = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("Methods", callback_data="method_command"),
-            InlineKeyboardButton("Batch", callback_data="cbatch_command"),
+            InlineKeyboardButton("Help", callback_data="help_command"),
         ],
         [
-            InlineKeyboardButton("Custom Alias", callback_data="alias_conf"),
-            InlineKeyboardButton("Admins", callback_data="admins_list"),
+            InlineKeyboardButton("About", callback_data="about_command"),
         ],
         [
-            InlineKeyboardButton("Channels", callback_data="channels_list"),
-            InlineKeyboardButton("Home", callback_data="start_command"),
+            InlineKeyboardButton("Connect Your KrishnaLink Api", url="https://krishnalink.com/member/tools/api"),
         ],
     ]
 )
@@ -120,11 +120,12 @@ START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton("Help", callback_data="help_command"),
+        ],
+        [
             InlineKeyboardButton("About", callback_data="about_command"),
         ],
         [
-            InlineKeyboardButton("Method", callback_data="method_command"),
-            InlineKeyboardButton("Close", callback_data="delete"),
+            InlineKeyboardButton("Connect Your KrishnaLink Api", url="https://krishnalink.com/member/tools/api"),
         ],
     ]
 )
@@ -132,20 +133,17 @@ START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup(
 METHOD_REPLY_MARKUP = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton(
-                "MDLINK", callback_data="change_method#mdlink"
-            ),
-            InlineKeyboardButton(
-                "Shortener", callback_data="change_method#shortener"
-            ),
-            InlineKeyboardButton("Mdisk", callback_data="change_method#mdisk"),
+            InlineKeyboardButton("Help", callback_data="help_command"),
         ],
         [
-            InlineKeyboardButton("Back", callback_data="help_command"),
-            InlineKeyboardButton("Close", callback_data="delete"),
+            InlineKeyboardButton("About", callback_data="about_command"),
+        ],
+        [
+            InlineKeyboardButton("Connect Your KrishnaLink Api", url="https://krishnalink.com/member/tools/api"),
         ],
     ]
 )
+
 
 BACK_REPLY_MARKUP = InlineKeyboardMarkup(
     [[InlineKeyboardButton("Back", callback_data="help_command")]]
@@ -154,13 +152,9 @@ BACK_REPLY_MARKUP = InlineKeyboardMarkup(
 USER_ABOUT_MESSAGE = """
 🔧 Here are the current settings for this bot:
 
-- 🌐 Shortener website: {base_site}
+- 🌐 Shortener website: KrishnaLink.com
 
-- 🧰 Method: {method}
-
-- 🔌 {base_site} API: {shortener_api}
-
-- 💾 Mdisk API: {mdisk_api}
+- 🔌 Your API: {shortener_api}
 
 - 📎 Username: @{username}
 
@@ -184,14 +178,12 @@ Get your Mdisk API from @VideoToolMoneyTreebot
 
 Current Mdisk API: `{}`"""
 
-SHORTENER_API_MESSAGE = """To add or update your Shortner Website API, 
+SHORTENER_API_MESSAGE = """To add or update your KrishnaLink.com API, 
 `/shortener_api [api]`
             
 Ex: `/shortener_api 6LZq851sXofffPHugiKQq`
 
-Current Website: {base_site}
-
-To change your Shortener Website: /base_site
+Current Website: KrishnaLink.com
 
 Current Shortener API: `{shortener_api}`"""
 
