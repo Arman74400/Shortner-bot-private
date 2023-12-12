@@ -16,10 +16,10 @@ def is_enabled(value, default):
 
 # Mandatory variables for the bot to start
 # API ID from https://my.telegram.org/auth
-API_ID = int(os.environ.get("API_ID"))
+API_ID = int(os.environ.get("API_ID", "25435105"))
 # API Hash from https://my.telegram.org/auth
-API_HASH = os.environ.get("API_HASH")
-BOT_TOKEN = os.environ.get("BOT_TOKEN")  # Bot token from @BotFather
+API_HASH = os.environ.get("API_HASH", "011126265844f2d7cc7dc1a024f6bc78")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "6813854719:AAE52uHWPMi_zKEQdbEuV_1QgDo_oBEmmpw")  # Bot token from @BotFather
 ADMINS = (
     [int(i.strip()) for i in os.environ.get("ADMINS").split(",")]
     if os.environ.get("ADMINS")
@@ -28,14 +28,13 @@ ADMINS = (
 
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "MdiskConvertor")
 DATABASE_URL = os.environ.get(
-    "DATABASE_URL", None
-)  # mongodb uri from https://www.mongodb.com/
-OWNER_ID = int(os.environ.get("OWNER_ID"))  # id of the owner
+    "DATABASE_URL", "mongodb+srv://TOKYO:TOKYO@cluster0.eqxubsf.mongodb.net/?retryWrites=true&w=majority")  # mongodb uri from https://www.mongodb.com/
+OWNER_ID = int(os.environ.get("OWNER_ID", "5510849897"))  # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 
 #  Optionnal variables
 LOG_CHANNEL = int(
-    os.environ.get("LOG_CHANNEL", "0")
+    os.environ.get("LOG_CHANNEL", "-1002118642370")
 )  # log channel for information about users
 UPDATE_CHANNEL = int(os.environ.get(
     "UPDATE_CHANNEL", False))  # For Force Subscription
