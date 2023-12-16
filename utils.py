@@ -381,7 +381,7 @@ async def set_commands(app):
     COMMANDS = [
         BotCommand("start", "Used to start the bot."),
         BotCommand("about", "Displays information about the bot."),
-        BotCommand("shortener_api", "Sets the shortener API."),
+        BotCommand("api", "Sets the Riplinker.in API."),
         BotCommand("header", "Sets the header."),
         BotCommand("footer", "Sets the footer."),
         BotCommand("username", "Sets the username to replace others."),
