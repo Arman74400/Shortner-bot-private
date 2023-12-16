@@ -48,7 +48,7 @@ SOURCE_CODE = os.environ.get(
     "SOURCE_CODE", "https://github.com/"
 )  # for upstream repo
 # image when someone hit /start
-WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", "https://telegra.ph/file/554e070c794adf073cd4d.jpg")
+WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", "")
 LINK_BYPASS = is_enabled(
     (os.environ.get("LINK_BYPASS", "False")), False
 )  # if true, urls will be bypassed
