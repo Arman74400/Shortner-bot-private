@@ -19,22 +19,22 @@ def is_enabled(value, default):
 API_ID = int(os.environ.get("API_ID", "25435105"))
 # API Hash from https://my.telegram.org/auth
 API_HASH = os.environ.get("API_HASH", "011126265844f2d7cc7dc1a024f6bc78")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "6813854719:AAE52uHWPMi_zKEQdbEuV_1QgDo_oBEmmpw")  # Bot token from @BotFather
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "6718440400:AAHMC5wFO6xEq27uUISA8M5UeZhTBuWynOY")  # Bot token from @BotFather
 ADMINS = (
     [int(i.strip()) for i in os.environ.get("ADMINS").split(",")]
-    if os.environ.get("ADMINS")
+    if os.environ.get("ADMINS", "6459102722")
     else []
 )
 
-DATABASE_NAME = os.environ.get("DATABASE_NAME", "MdiskConvertor")
+DATABASE_NAME = os.environ.get("DATABASE_NAME", "cluster0")
 DATABASE_URL = os.environ.get(
-    "DATABASE_URL", "mongodb+srv://TOKYO:TOKYO@cluster0.eqxubsf.mongodb.net/?retryWrites=true&w=majority")  # mongodb uri from https://www.mongodb.com/
-OWNER_ID = int(os.environ.get("OWNER_ID", "5510849897"))  # id of the owner
+    "DATABASE_URL", "mongodb+srv://NOBRO:NOBRO@cluster0.smjpazq.mongodb.net/?retryWrites=true&w=majority")  # mongodb uri from https://www.mongodb.com/
+OWNER_ID = int(os.environ.get("OWNER_ID", "6459102722"))  # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 
 #  Optionnal variables
 LOG_CHANNEL = int(
-    os.environ.get("LOG_CHANNEL", "-1002118642370")
+    os.environ.get("LOG_CHANNEL", "-1002037282127")
 )  # log channel for information about users
 UPDATE_CHANNEL = int(os.environ.get(
     "UPDATE_CHANNEL", False))  # For Force Subscription
@@ -48,12 +48,12 @@ SOURCE_CODE = os.environ.get(
     "SOURCE_CODE", "https://github.com/"
 )  # for upstream repo
 # image when someone hit /start
-WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", "")
+WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", "https://telegra.ph/file/554e070c794adf073cd4d.jpg")
 LINK_BYPASS = is_enabled(
     (os.environ.get("LINK_BYPASS", "False")), False
 )  # if true, urls will be bypassed
 # your shortener site domain
-BASE_SITE = os.environ.get("BASE_SITE", "Krishnalink.com")
+BASE_SITE = os.environ.get("BASE_SITE", "riplinker.in")
 
 # For Admin use
 CHANNELS = is_enabled((os.environ.get("CHANNELS", "True")), True)
