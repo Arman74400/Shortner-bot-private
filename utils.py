@@ -353,13 +353,13 @@ async def user_api_check(user):
         if not user["mdisk_api"]:
             return "\n\nSet your /mdisk_api to continue..."
     elif user_method == "shortener":
-        if not user["shortener_api"]:
-            return f"\n\nSet your Krishna Link /shortener_api to continue...\nCurrent Website {user['base_site']}"
+        if not user["api"]:
+            return f"\n\nSet your Riplinker.in /shortener_api to continue...\nCurrent Website {user['base_site']}"
     elif user_method == "mdlink":
         if not user["mdisk_api"]:
             return "\n\nSet your /mdisk_api to continue..."
-        if not user["shortener_api"]:
-            return f"\n\nSet your Krishna Link /shortener_api to continue...\nCurrent Website {user['base_site']}"
+        if not user["api"]:
+            return f"\n\nSet your Riplinker.in /shortener_api to continue...\nCurrent Website {user['base_site']}"
     else:
         return "\n\nSet your /method first"
     return True
