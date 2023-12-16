@@ -11,11 +11,11 @@ For example: <code>/batch -100xxx</code>
 I'll handle the rest and get those links shortened or converted in a short time! 💪
 """
 
-START_MESSAGE = """Hi, {}
+START_MESSAGE = """Hi, Buddy 
 
-I Am KrishnaLink.com, Bulk Link Converter. I Can Convert Links Directly From Your KrishnaLink.com Account,
+I Am Riplinker.in, Bulk Link Converter. I Can Convert Links Directly From Your Riplinker.in Account,
 
-1. Go To 👉 https://krishnalink.com/member/tools/api  
+1. Go To 👉 https://riplinker.in/member/tools/api  
 2. Than Copy API Key
 3. Than Type /shortener_api than give a single space and than paste your API Key (see example to understand more...)
 
@@ -28,14 +28,14 @@ Example: /shortener_api de303d5270f481aec928f39883da7b7f9a8812ac
 ➕ Hit 👉 /banner To Get Help About Adding your Custom Banner in posts.
 ➕ Hit 👉 /footer To Get Help About Adding your Custom Footer to bot.
 
-If You Want Any Other Shortner Link Converter Bot Instead Of krishnalink.com than contact at 👉 @Badal6667Rai (all shortners support available.)
+If You Want Any Other Shortner Link Converter Bot Instead Of riplinker.in than contact at 👉 @Badal6667Rai (all shortners support available.)
 """
 
-HELP_MESSAGE = """Hey there! My name is {firstname} and I'm a link convertor and shortener bot here to make your work easier and help you earn more 💰.
+HELP_MESSAGE = """Hey there! My name is Riplinker Bulk Converter Bot and I'm a link convertor and shortener bot here to make your work easier and help you earn more 💰.
 
 I have a ton of handy features to help you out, such as:
 
-- [Hyperlink](https://t.me/{username}) support 🔗
+- Hyperlink support 🔗
 - Button conversion support 🔘
 - Domain inclusion and exclusion options 🌐
 - Header and footer text support 📝
@@ -47,7 +47,6 @@ I have a ton of handy features to help you out, such as:
 Useful commands:
 
 - /start: Start me up! You probably already used this.
-- /help: Send this message; I'll tell you more about myself!
 - /batch -100xxx: To shorten or convert all posts in your channel
 """
 
@@ -59,7 +58,7 @@ ABOUT_TEXT = """
 `📝 Language:` [Python 3](https://www.python.org/)
 `🧰 Framework:` [Pyrogram](https://github.com/pyrogram/pyrogram)
 `👨‍💻 Developer:` [Dev](t.me/badal6667rai)
-`📢 Support:` [Talk Bot](https://t.me/zxlink07)
+`📢 Support:` [ADMIN](https://t.me/RIPLINKER)
 """
 
 
@@ -94,13 +93,7 @@ Here is a list of the channels:
 HELP_REPLY_MARKUP = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("Help", callback_data="help_command"),
-        ],
-        [
-            InlineKeyboardButton("About", callback_data="about_command"),
-        ],
-        [
-            InlineKeyboardButton("Connect Your KrishnaLink Api", url="https://krishnalink.com/member/tools/api"),
+            InlineKeyboardButton("👈 Back", callback_data="start_command"),
         ],
     ]
 )
@@ -109,23 +102,19 @@ HELP_REPLY_MARKUP = InlineKeyboardMarkup(
 ABOUT_REPLY_MARKUP = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("Home", callback_data="start_command"),
-            InlineKeyboardButton("Help", callback_data="help_command"),
+            InlineKeyboardButton("👈 Back", callback_data="start_command"),
         ],
-        [InlineKeyboardButton("Close", callback_data="delete")],
     ]
 )
 
 START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup(
     [
         [
-            InlineKeyboardButton("Help", callback_data="help_command"),
+            InlineKeyboardButton("Help ✍️", callback_data="help_command"),
+            InlineKeyboardButton("About 📢", callback_data="about_command"),
         ],
         [
-            InlineKeyboardButton("About", callback_data="about_command"),
-        ],
-        [
-            InlineKeyboardButton("Connect Your KrishnaLink Api", url="https://krishnalink.com/member/tools/api"),
+            InlineKeyboardButton("Connect Your RipLinker Api 🖇️", url="https://riplinker.in/member/tools/api"),
         ],
     ]
 )
@@ -152,9 +141,9 @@ BACK_REPLY_MARKUP = InlineKeyboardMarkup(
 USER_ABOUT_MESSAGE = """
 🔧 Here are the current settings for this bot:
 
-- 🌐 Shortener website: {base_site}
+- 🌐 Supported website: RipLinker.in
 
-- 🔌 Your API: {shortener_api}
+- 🔌 Your connected API: {shortener_api}
 
 - 📎 Username: @{username}
 
@@ -178,14 +167,14 @@ Get your Mdisk API from @VideoToolMoneyTreebot
 
 Current Mdisk API: `{}`"""
 
-SHORTENER_API_MESSAGE = """To add or update your KrishnaLink.com API, 
+SHORTENER_API_MESSAGE = """To add or update your Riplinker API, 
 `/shortener_api [api]`
             
 Ex: `/shortener_api 6LZq851sXofffPHugiKQq`
 
-Supported Website: KrishnaLink.com
+Supported Website: Riplinker.in
 
-Current Shortener API: `{shortener_api}`"""
+Current Connected API: `{shortener_api}`"""
 
 HEADER_MESSAGE = """📝 To set the header text for every message caption or text, just reply with the text you want to use. You can use \\n to add a line break.
 
