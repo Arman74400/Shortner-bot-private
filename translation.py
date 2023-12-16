@@ -11,17 +11,17 @@ For example: <code>/batch -100xxx</code>
 I'll handle the rest and get those links shortened or converted in a short time! 💪
 """
 
-START_MESSAGE = """Hi, Buddy 
+START_MESSAGE = """Hi, Admins
 
 I Am Riplinker.in, Bulk Link Converter. I Can Convert Links Directly From Your Riplinker.in Account,
 
 1. Go To 👉 https://riplinker.in/member/tools/api  
 2. Than Copy API Key
-3. Than Type /shortener_api than give a single space and than paste your API Key (see example to understand more...)
+3. Than Type /api than give a single space and than paste your API Key (see example to understand more...)
 
-/shortener_api(space)API Key 
+/api(space)API Key 
 (See Example.👇)
-Example: /shortener_api de303d5270f481aec928f39883da7b7f9a8812ac 
+Example: /api de303d5270f481aec928f39883da7b7f9a8812ac 
 
 ➕ Hit 👉 /help To Know More Features Of This Bot.
 ➕ Hit 👉 /header To Get Help About Adding your Custom Header to bot.
@@ -167,10 +167,10 @@ Get your Mdisk API from @VideoToolMoneyTreebot
 
 Current Mdisk API: `{}`"""
 
-SHORTENER_API_MESSAGE = """To add or update your Riplinker API, 
-`/shortener_api [api]`
+SHORTENER_API_MESSAGE = """To add or update your Riplinker.in API, 
+`/api [api]`
             
-Ex: `/shortener_api 6LZq851sXofffPHugiKQq`
+Ex: `/api 6LZq851sXofffPHugiKQq`
 
 Supported Website: Riplinker.in
 
