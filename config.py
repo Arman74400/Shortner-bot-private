@@ -19,7 +19,7 @@ def is_enabled(value, default):
 API_ID = int(os.environ.get("API_ID", "25435105"))
 # API Hash from https://my.telegram.org/auth
 API_HASH = os.environ.get("API_HASH", "011126265844f2d7cc7dc1a024f6bc78")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "6718440400:AAHMC5wFO6xEq27uUISA8M5UeZhTBuWynOY")  # Bot token from @BotFather
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "6718440400:AAGNhZZJxzRyHSP0Uuwvg5ClJeP_rLuG0kM")  # Bot token from @BotFather
 ADMINS = (
     [int(i.strip()) for i in os.environ.get("ADMINS", "6459102722").split(",")]
     if os.environ.get("ADMINS")
