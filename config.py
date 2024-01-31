@@ -16,24 +16,25 @@ def is_enabled(value, default):
 
 # Mandatory variables for the bot to start
 # API ID from https://my.telegram.org/auth
-API_ID = int(os.environ.get("API_ID", "28483301"))
+API_ID = int(os.environ.get("API_ID", "21845036"))
 # API Hash from https://my.telegram.org/auth
-API_HASH = os.environ.get("API_HASH", "187b27cc4f74d20b717c0563aade821d")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "6858627899:AAEUY4lcNm4DRx0HEn1VsSZccnbmXkWEc_4")  # Bot token from @BotFather
+API_HASH = os.environ.get("API_HASH", "b9787357754c57417854ba8ca0d35129")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "6965002718:AAHMvGy52iR_K_cnJamRvf36NjU7SRPyfg8")  # Bot token from @BotFather
 ADMINS = (
-    [int(i.strip()) for i in os.environ.get("ADMINS", "5188763785").split(",")]
+    [int(i.strip()) for i in os.environ.get("ADMINS", "6459102722").split(",")]
     if os.environ.get("ADMINS")
     else []
 )
 
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "cluster0")
-DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://NOBRO:NOBRO@cluster0.smjpazq.mongodb.net/?retryWrites=true&w=majority")  # mongodb uri from https://www.mongodb.com/
-OWNER_ID = int(os.environ.get("OWNER_ID", "5188763785"))  # id of the owner
+DATABASE_URL = os.environ.get(
+    "DATABASE_URL", "mongodb+srv://NOBRO:NOBRO@cluster0.smjpazq.mongodb.net/?retryWrites=true&w=majority")  # mongodb uri from https://www.mongodb.com/
+OWNER_ID = int(os.environ.get("OWNER_ID", "6459102722"))  # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 
 #  Optionnal variables
 LOG_CHANNEL = int(
-    os.environ.get("LOG_CHANNEL", "-1002133531200")
+    os.environ.get("LOG_CHANNEL", "-1002106628524")
 )  # log channel for information about users
 UPDATE_CHANNEL = int(os.environ.get(
     "UPDATE_CHANNEL", False))  # For Force Subscription
@@ -67,7 +68,7 @@ DE_BYPASS = (
     if os.environ.get("DE_BYPASS")
     else []
 )
-DE_BYPASS.append("mdisk.me")
+DE_BYPASS.append("nolinks...com")
 
 FORWARD_MESSAGE = is_enabled(
     (os.environ.get("FORWARD_MESSAGE", "False")), False
