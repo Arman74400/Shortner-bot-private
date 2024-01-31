@@ -167,7 +167,7 @@ Get your Mdisk API from @VideoToolMoneyTreebot
 
 Current Mdisk API: `{}`"""
 
-SHORTENER_API_MESSAGE = """To add or update your Riplinker.in API, 
+SHORTENER_API_MESSAGE = """To add or update your Linksmoney.in API, 
 `/api [api]`
             
 Ex: `/api 6LZq851sXofffPHugiKQq`
