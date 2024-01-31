@@ -57,8 +57,8 @@ ABOUT_TEXT = """
     
 `📝 Language:` [Python 3](https://www.python.org/)
 `🧰 Framework:` [Pyrogram](https://github.com/pyrogram/pyrogram)
-`👨‍💻 Developer:` [Dev](t.me/badal6667rai)
-`📢 Support:` [ADMIN](https://t.me/RIPLINKER)
+`👨‍💻 Developer:` [Dev](t.me/parveen00712)
+`📢 Support:` [ADMIN](https://t.me/netflix_india_007)
 """
 
 
