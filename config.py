@@ -16,12 +16,12 @@ def is_enabled(value, default):
 
 # Mandatory variables for the bot to start
 # API ID from https://my.telegram.org/auth
-API_ID = int(os.environ.get("API_ID", "21845036"))
+API_ID = int(os.environ.get("API_ID", "28483301"))
 # API Hash from https://my.telegram.org/auth
-API_HASH = os.environ.get("API_HASH", "b9787357754c57417854ba8ca0d35129")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "6965002718:AAHMvGy52iR_K_cnJamRvf36NjU7SRPyfg8")  # Bot token from @BotFather
+API_HASH = os.environ.get("API_HASH", "187b27cc4f74d20b717c0563aade821d")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "6904942664:AAFuWXc6vnPJeD2UHJFrHvooIDxpEMnSGnU")  # Bot token from @BotFather
 ADMINS = (
-    [int(i.strip()) for i in os.environ.get("ADMINS", "6459102722").split(",")]
+    [int(i.strip()) for i in os.environ.get("ADMINS", "6683865620").split(",")]
     if os.environ.get("ADMINS")
     else []
 )
@@ -29,12 +29,12 @@ ADMINS = (
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "cluster0")
 DATABASE_URL = os.environ.get(
     "DATABASE_URL", "mongodb+srv://NOBRO:NOBRO@cluster0.smjpazq.mongodb.net/?retryWrites=true&w=majority")  # mongodb uri from https://www.mongodb.com/
-OWNER_ID = int(os.environ.get("OWNER_ID", "6459102722"))  # id of the owner
+OWNER_ID = int(os.environ.get("OWNER_ID", "6683865620"))  # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 
 #  Optionnal variables
 LOG_CHANNEL = int(
-    os.environ.get("LOG_CHANNEL", "-1002106628524")
+    os.environ.get("LOG_CHANNEL", "-1002133531200")
 )  # log channel for information about users
 UPDATE_CHANNEL = int(os.environ.get(
     "UPDATE_CHANNEL", False))  # For Force Subscription
