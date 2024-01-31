@@ -21,14 +21,14 @@ API_ID = int(os.environ.get("API_ID", "24003416"))
 API_HASH = os.environ.get("API_HASH", "013d9b3fe388308ff1272d33d1e40e2b")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "6858627899:AAEUY4lcNm4DRx0HEn1VsSZccnbmXkWEc_4")  # Bot token from @BotFather
 ADMINS = (
-    [int(i.strip()) for i in os.environ.get("ADMINS", "6683865620").split(",")]
+    [int(i.strip()) for i in os.environ.get("ADMINS", "5188763785").split(",")]
     if os.environ.get("ADMINS")
     else []
 )
 
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "cluster0")
 DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://NOBRO:NOBRO@cluster0.smjpazq.mongodb.net/?retryWrites=true&w=majority")  # mongodb uri from https://www.mongodb.com/
-OWNER_ID = int(os.environ.get("OWNER_ID", "6683865620"))  # id of the owner
+OWNER_ID = int(os.environ.get("OWNER_ID", "5188763785"))  # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 
 #  Optionnal variables
