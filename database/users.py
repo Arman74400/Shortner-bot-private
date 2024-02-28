@@ -18,7 +18,7 @@ async def get_user(user_id):
             "header_text": "",
             "footer_text": "",
             "username": None,
-            "base_site": "linksmoney.in",
+            "base_site": "RoyalMoney.online",
             "banner_image": None,
             "is_banner_image": True,
             "is_username": True,
