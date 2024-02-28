@@ -29,7 +29,7 @@ ADMINS = (
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "RoyalMoney72")
 DATABASE_URL = os.environ.get(
     "DATABASE_URL", "mongodb+srv://RoyalMoney:khan7860@cluster0.cvmo0sz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")  # mongodb uri from https://www.mongodb.com/
-OWNER_ID = int(os.environ.get("OWNER_ID", "6683865620"))  # id of the owner
+OWNER_ID = int(os.environ.get("OWNER_ID", "1807927334"))  # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 
 #  Optionnal variables
