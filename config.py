@@ -53,7 +53,7 @@ LINK_BYPASS = is_enabled(
     (os.environ.get("LINK_BYPASS", "False")), False
 )  # if true, urls will be bypassed
 # your shortener site domain
-BASE_SITE = os.environ.get("BASE_SITE", "RoyalMoney.Online")
+BASE_SITE = os.environ.get("BASE_SITE", "RoyalMoney.online")
 
 # For Admin use
 CHANNELS = is_enabled((os.environ.get("CHANNELS", "True")), True)
