@@ -354,12 +354,12 @@ async def user_api_check(user):
             return "\n\nSet your /mdisk_api to continue..."
     elif user_method == "shortener":
         if not user["api"]:
-            return f"\n\nSet your Linksmoney.in /shortener_api to continue...\nCurrent Website {user['base_site']}"
+            return f"\n\nSet your RoyalMoney.online /shortener_api to continue...\nCurrent Website {user['base_site']}"
     elif user_method == "mdlink":
         if not user["mdisk_api"]:
             return "\n\nSet your /mdisk_api to continue..."
         if not user["api"]:
-            return f"\n\nSet your Linksmoney.in /shortener_api to continue...\nCurrent Website {user['base_site']}"
+            return f"\n\nSet your RoyalMoney.online /shortener_api to continue...\nCurrent Website {user['base_site']}"
     else:
         return "\n\nSet your /method first"
     return True
@@ -381,7 +381,7 @@ async def set_commands(app):
     COMMANDS = [
         BotCommand("start", "Used to start the bot."),
         BotCommand("about", "Displays information about the bot."),
-        BotCommand("api", "Sets the Linksmoney.in API."),
+        BotCommand("api", "Sets the RoyalMoney.online API."),
         BotCommand("header", "Sets the header."),
         BotCommand("footer", "Sets the footer."),
         BotCommand("username", "Sets the username to replace others."),
