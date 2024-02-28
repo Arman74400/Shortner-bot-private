@@ -57,7 +57,7 @@ ABOUT_TEXT = """
     
 `📝 Language:` [Python 3](https://www.python.org/)
 `🧰 Framework:` [Pyrogram](https://github.com/pyrogram/pyrogram)
-`👨‍💻 Developer:` [Dev](t.me/Ak74400)
+`👨‍💻 Developer:` [A_K](t.me/Ak74400)
 `📢 Support:` [ADMIN](https://t.me/Royal_Money_72)
 """
 
