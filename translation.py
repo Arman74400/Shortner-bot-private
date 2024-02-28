@@ -172,7 +172,7 @@ SHORTENER_API_MESSAGE = """To add or update your Linksmoney.in API,
             
 Ex: `/api 6LZq851sXofffPHugiKQq`
 
-Supported Website: Linksmoney.in
+Supported Website: RoyalMoney.online
 
 Current Connected API: `{shortener_api}`"""
 
