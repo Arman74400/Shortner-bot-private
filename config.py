@@ -16,25 +16,25 @@ def is_enabled(value, default):
 
 # Mandatory variables for the bot to start
 # API ID from https://my.telegram.org/auth
-API_ID = int(os.environ.get("API_ID", "21845036"))
+API_ID = int(os.environ.get("API_ID", "9277335"))
 # API Hash from https://my.telegram.org/auth
-API_HASH = os.environ.get("API_HASH", "b9787357754c57417854ba8ca0d35129")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "6625555273:AAE0qfgU2ujJ4Oeuqfcd9q1LXlIhQQEurw8")  # Bot token from @BotFather
+API_HASH = os.environ.get("API_HASH", "3fbed5d90d8820172f9f251269c01479")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "6137243599:AAGXMQDo2JxHGq_k4BJ8sL_CA8iBSrq_iUE")  # Bot token from @BotFather
 ADMINS = (
-    [int(i.strip()) for i in os.environ.get("ADMINS", "6683865620").split(",")]
+    [int(i.strip()) for i in os.environ.get("ADMINS", "1807927334").split(",")]
     if os.environ.get("ADMINS")
     else []
 )
 
-DATABASE_NAME = os.environ.get("DATABASE_NAME", "cluster0")
+DATABASE_NAME = os.environ.get("DATABASE_NAME", "RoyalMoney72")
 DATABASE_URL = os.environ.get(
-    "DATABASE_URL", "mongodb+srv://RIP:RIP@cluster0.abzflta.mongodb.net/?retryWrites=true&w=majority")  # mongodb uri from https://www.mongodb.com/
+    "DATABASE_URL", "mongodb+srv://RoyalMoney:khan7860@cluster0.cvmo0sz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")  # mongodb uri from https://www.mongodb.com/
 OWNER_ID = int(os.environ.get("OWNER_ID", "6683865620"))  # id of the owner
 ADMINS.append(OWNER_ID) if OWNER_ID not in ADMINS else []
 
 #  Optionnal variables
 LOG_CHANNEL = int(
-    os.environ.get("LOG_CHANNEL", "-1002133531200")
+    os.environ.get("LOG_CHANNEL", "-1002024698762")
 )  # log channel for information about users
 UPDATE_CHANNEL = int(os.environ.get(
     "UPDATE_CHANNEL", False))  # For Force Subscription
@@ -53,12 +53,12 @@ LINK_BYPASS = is_enabled(
     (os.environ.get("LINK_BYPASS", "False")), False
 )  # if true, urls will be bypassed
 # your shortener site domain
-BASE_SITE = os.environ.get("BASE_SITE", "linksmoney.in")
+BASE_SITE = os.environ.get("BASE_SITE", "RoyalMoney.Online")
 
 # For Admin use
 CHANNELS = is_enabled((os.environ.get("CHANNELS", "True")), True)
 CHANNEL_ID = (
-    [int(i.strip()) for i in os.environ.get("CHANNEL_ID").split(" ")]
+    [int(i.strip()) for i in os.environ.get("CHANNEL_ID").split("-1002095382800")]
     if os.environ.get("CHANNEL_ID")
     else []
 )
