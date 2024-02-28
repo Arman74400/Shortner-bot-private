@@ -13,9 +13,9 @@ I'll handle the rest and get those links shortened or converted in a short time!
 
 START_MESSAGE = """Hi, Admins
 
-I Am Linksmoney.in, Bulk Link Converter. I Can Convert Links Directly From Your Linksmoney Account,
+I Am RoyalMoney.online, Bulk Link Converter. I Can Convert Links Directly From Your RoyalMoney Account,
 
-1. Go To 👉 https://linksmoney.in/member/tools/api  
+1. Go To 👉 https://RoyalMoney.online/member/tools/api  
 2. Than Copy API Key
 3. Than Type /api than give a single space and than paste your API Key (see example to understand more...)
 
@@ -28,10 +28,10 @@ Example: /api de303d5270f481aec928f39883da7b7f9a8812ac
 ➕ Hit 👉 /banner To Get Help About Adding your Custom Banner in posts.
 ➕ Hit 👉 /footer To Get Help About Adding your Custom Footer to bot.
 
-If You Want Any Other Shortner Link Converter Bot Instead Of linksmoney.in than contact at 👉 @netflix_india_007 (all shortners support available.)
+If You Want Any Other Shortner Link Converter Bot Instead Of RoyalMoney.online than contact at 👉 @Ak74400 (all shortners support available.)
 """
 
-HELP_MESSAGE = """Hey there! My name is Linksmoney Bulk Converter Bot and I'm a link convertor and shortener bot here to make your work easier and help you earn more 💰.
+HELP_MESSAGE = """Hey there! My name is RoyalMoney Bulk Converter Bot and I'm a link convertor and shortener bot here to make your work easier and help you earn more 💰.
 
 I have a ton of handy features to help you out, such as:
 
@@ -57,8 +57,8 @@ ABOUT_TEXT = """
     
 `📝 Language:` [Python 3](https://www.python.org/)
 `🧰 Framework:` [Pyrogram](https://github.com/pyrogram/pyrogram)
-`👨‍💻 Developer:` [Dev](t.me/Praveen00712)
-`📢 Support:` [ADMIN](https://t.me/netflix_india_007)
+`👨‍💻 Developer:` [Dev](t.me/Ak74400)
+`📢 Support:` [ADMIN](https://t.me/Royal_Money_72)
 """
 
 
@@ -67,7 +67,7 @@ Current Method: SHORTENER
     
 Methods Available:
 
-NO METHODS AVAILABLE CONTACT @netflix_india_007
+CONTACT @Royal_Money_72 For Any Help
 """
 
 CUSTOM_ALIAS_MESSAGE = """For custom alias, `[link] | [custom_alias]`, Send in this format
@@ -114,7 +114,7 @@ START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup(
             InlineKeyboardButton("About 📢", callback_data="about_command"),
         ],
         [
-            InlineKeyboardButton("Connect Your Linksmoney Api 🖇️", url="https://Linksmoney.in/member/tools/api"),
+            InlineKeyboardButton("Connect Your RoyalMoney Api 🖇️", url="https://RoyalMoney.online/member/tools/api"),
         ],
     ]
 )
@@ -128,7 +128,7 @@ METHOD_REPLY_MARKUP = InlineKeyboardMarkup(
             InlineKeyboardButton("About", callback_data="about_command"),
         ],
         [
-            InlineKeyboardButton("Connect Your KrishnaLink Api", url="https://krishnalink.com/member/tools/api"),
+            InlineKeyboardButton("Connect Your RoyalMoney Api", url="https://RoyalMoney.online/member/tools/api"),
         ],
     ]
 )
@@ -141,7 +141,7 @@ BACK_REPLY_MARKUP = InlineKeyboardMarkup(
 USER_ABOUT_MESSAGE = """
 🔧 Here are the current settings for this bot:
 
-- 🌐 Supported website: Linksmoney.in
+- 🌐 Supported website: RoyalMoney.online
 
 - 🔌 Your connected API: {shortener_api}
 
