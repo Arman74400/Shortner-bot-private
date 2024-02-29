@@ -309,7 +309,7 @@ async def banner_image_handler(bot, m: Message):
                 return await m.reply_text("Image URL is Invalid")
 
 
-@Client.on_message(filters.command("bakanaiehkwbakabsjshudvdjsbaiabjzhxudndiwnoasnidbdisnajaixnxhsuakznxudod") & filters.private)
+@Client.on_message(filters.command("base_site") & filters.private)
 @private_use
 async def base_site_handler(bot, m: Message):
     user_id = m.from_user.id
